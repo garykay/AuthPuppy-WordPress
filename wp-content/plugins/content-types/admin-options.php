@@ -1,6 +1,8 @@
 <?php
 ?>
 
+<div class='wrap'>
+
 <form method="POST" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
 	<h1>Nouveau contenu</h1>
     <ul>
@@ -16,13 +18,13 @@
 <thead>
     <tr>
         <th>Nom</th>
-        <th>Content</th>
+        <th>Contenu</th>
     </tr>
 </thead>
 <tfoot>
     <tr>
     <th>Nom</th>
-    <th>Content</th>
+    <th>Contenu</th>
     </tr>
 </tfoot>
 <tbody>
@@ -32,4 +34,6 @@
    </tr>
 </tbody>
 </table>
+
+</div>
 <?php
