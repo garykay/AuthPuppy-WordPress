@@ -1,5 +1,16 @@
 <?php
 
+/*
+Plugin Name: Content Type
+Plugin URI: http://sobremarc.com/content-type
+Description: Create static content that you can repeat in multiple blogs using widgets
+Version: 0.1.0
+Author: Marc Boivin
+Author URI: http://sobremarc.com
+License: Do what the fuck you want with it
+*/
+
+
 global $jal_db_version;
 $zapct_db_version = "1.0";
 
