@@ -23,11 +23,6 @@
 	
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-	<link rel="stylesheet" type="text/css" media="all" href="<?php echo WP_CONTENT_URL; ?>/themes/authpuppy/style-bp.css" />
-	<? /* 
-	<link rel="stylesheet" type="text/css" media="all" href="<?php echo WP_CONTENT_URL; ?>/themes/authpuppy/bp.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="<?php echo WP_CONTENT_URL; ?>/themes/authpuppy/adminbar.css" />
-	*/ ?>
 	
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	
