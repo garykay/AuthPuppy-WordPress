@@ -107,7 +107,7 @@ function Authpuppy_setup() {
 	// The height and width of your custom header. You can hook into the theme's own filters to change these values.
 	// Add a filter to Authpuppy_header_image_width and Authpuppy_header_image_height to change these values.
 	define( 'HEADER_IMAGE_WIDTH', apply_filters( 'Authpuppy_header_image_width', 125 ) );
-	define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'Authpuppy_header_image_height', 90 ) );
+	define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'Authpuppy_header_image_height', 200 ) );
 
 	// We'll be using post thumbnails for custom header images on posts and pages.
 	// We want them to be 125 pixels wide by 90 pixels tall.
