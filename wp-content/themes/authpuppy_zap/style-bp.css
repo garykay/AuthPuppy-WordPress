@@ -1,0 +1,432 @@
+/*
+Theme Name: Authpuppy ZAP
+Theme URI: http://authpuppy.com/
+Description: TwentyTen The 2010 default theme for WordPress modify by Adcaelo for Authpuppy
+Author: the WordPress team revisited by Adcaelo and by MArc Boivin
+Version: 1.0
+Tags: buddypress, authpuppy, zap, zap-quebec, isf, ile-sans-fil, black, blue, white, two-columns, fixed-width, custom-header, custom-background, theme-options, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style
+*/
+
+
+/* Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+div.clear {
+	height: 25px;
+}
+#wp-admin-bar {
+	display: none;
+}
+
+.sidebarul li a {
+	display: block;
+	background: #23292c url('images/dots.png') no-repeat top left;
+	height: 30px;
+	padding: 12px 0 0 10px;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	color: #fff;
+	width: 210px;
+	margin-bottom: 5px;
+}
+.sidebarul li a:hover
+{
+	background: #090 url('images/dots.png') no-repeat top left;
+}
+
+
+#content-bp ul li {
+-moz-border-radius:6px 6px 6px 6px;
+background:none repeat scroll 0 0 #EAEAEA;
+border:1px solid #CCCCCC;
+float:left;
+margin:0 10px 0 0;
+overflow:hidden;
+padding:0 10px;
+}
+#content-bp ul li.current {
+background:none repeat scroll 0 0 #FFFFFF;
+}
+
+table.profile-fields td.label {
+	text-align: right;
+	padding-right: 25px;
+	width: 40%;
+}
+table.profile-fields td.data {
+	padding-left: 25px;
+	width: 60%;
+}
+
+/* --------------------- */
+
+/***
+ * Navigation tabs
+ */
+div.item-list-tabs ul {
+	list-style: none;
+	padding-bottom: 15px;
+	line-height: 200%;
+}
+	div.item-list-tabs ul li {
+		float: left;
+		margin-right: 5px;
+	}
+		div.item-list-tabs#subnav ul li a {
+			border: none;
+			padding: 0;
+			text-decoration:none;
+		}
+
+	div.item-list-tabs ul li.last { float: right; }
+
+ul.profile-group h4, div.bp-widget h4 {
+	color:#559455;
+	font-size:18px;
+	margin-bottom:9px;
+	padding:0;
+}
+	
+#content-bp #item-body {
+-moz-border-radius:6px 6px 6px 6px;
+background:none repeat scroll 0 0 #F6F6F6;
+padding:10px;
+}
+#content-bp #item-body .bp-widget  {
+border-top:2px solid #FFFFFF;
+padding-top:10px;
+}
+
+table.profile-fields tr {
+position:relative;
+}
+table.profile-fields tr td.label, table.wp-profile-fields tr td.label {
+border-right:1px solid #DADADA;
+font-weight:bold;
+position:relative;
+}
+
+
+/* Standard Input Forms */
+
+form.standard-form label, form.standard-form span.label {
+	margin: 15px 0 5px 0;
+}
+	form.standard-form div.checkbox label,
+	form.standard-form div.radio label {
+		font-weight: normal;
+		margin: 5px 0 0 0;
+	}
+
+	form.standard-form textarea {
+		width: 75%;
+		height: 120px;
+	}
+
+/* Userbar*/
+
+
+#userbar img.avatar, #userbar img, #optionsbar img.avatar, #optionsbar img, #logout-link img.avatar {
+float:left !important;
+height:20px;
+margin-right:8px;
+margin-top:0;
+width:20px;
+}
+.directory-sidebar img.avatar {
+float:left !important;
+margin-right:8px;
+margin-top:0;
+}
+#userbar {
+height:24px;
+margin-bottom:15px;
+padding:4px 0px;
+}
+#userbar li {
+	border-left:1px solid #CCCCCC;
+	float:left;
+	margin-bottom:0;
+	margin-right:0;
+}
+#userbar li a {
+	padding:0 10px 0 25px;
+}
+#userbar li a#all-activity {
+	background:url("images/bp/icon/activity.png") no-repeat scroll 5px center transparent;
+}
+#userbar li a#all-members{
+	background:url("images/bp/icon/members.png") no-repeat scroll 5px center transparent;
+}
+#userbar li a#all-groups {
+	background:url("images/bp/icon/groups.png") no-repeat scroll 5px center transparent;
+}
+
+#userbar li a#my-avatar{
+	padding: 1px;
+	margin: -5px;
+}
+
+#userbar li a#my-activity {
+	background:url("images/bp/icon/activity.png") no-repeat scroll 5px center transparent;
+}
+#userbar li a#my-profile {
+	background:url("images/bp/icon/profile.png") no-repeat scroll 5px center transparent;
+}
+#userbar li a#my-groups {
+	background:url("images/bp/icon/groups.png") no-repeat scroll 5px center transparent;
+}
+#userbar li a#my-friends {
+	background:url("images/bp/icon/friend.png") no-repeat scroll 5px center transparent;
+}
+#userbar li a#my-messages {
+	background:url("images/bp/icon/message.png") no-repeat scroll 5px center transparent;
+}
+#userbar li a#my-settings {
+	background:url("images/bp/icon/settings.png") no-repeat scroll 5px center transparent;
+}
+
+#userbar li a#bp-login {
+	background:url("images/bp/icon/login.png") no-repeat scroll 5px center transparent;
+}
+#userbar li a#bp-logout {
+	background:url("images/bp/icon/logout.png") no-repeat scroll 5px center transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+/* --------------------- */
+/* Load the default admin bar styles */
+@import url( ../buddypress/bp-themes/bp-default/_inc/css/adminbar.css );
+
+/**
+ * The following are basic CSS styles to give BuddyPress pages their absolute basic formatting.
+ * You should extend/override these styles in your standard theme CSS to match your theme.
+ */
+
+/***
+ * Object Lists (groups/members/forums/blogs)
+ */
+
+ul.item-list {
+	margin: 20px 0;
+	padding: 0;
+	list-style: none;
+}
+	ul.item-list li { position: relative; }
+	ul.item-list div.item-avatar {
+		float: left;
+	}
+	div.item-avatar img {
+		width: 40px;
+		height: 40px;
+	}
+
+	ul.item-list div.item {
+		margin-left: 65px;
+	}
+
+	ul.item-list div.action {
+		top: 0;
+		right: 15px;
+		text-align: right;
+	}
+	ul.item-list div.action-membre{
+		top: 0;
+		right: 15px;
+		text-align: right;
+		position: absolute;
+	}
+
+
+/***
+ * Content Object Headers
+ */
+
+div#item-header {
+	padding-bottom: 15px;
+	overflow: hidden;
+}
+	div#item-header div#item-header-avatar {
+		float: left;
+		margin-right: 15px;
+	}
+
+	div#item-header div#item-header-content {
+		float: left;
+	}
+
+/***
+ * Activity Stream Post Form
+ */
+
+form#whats-new-form {
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+	form#whats-new-form #whats-new-avatar {
+		float: left;
+	}
+
+	form#whats-new-form h5 {
+		clear: none;
+		margin-left: 76px;
+	}
+
+	form#whats-new-form #whats-new-content {
+		margin-left: 54px;
+		padding-left: 22px;
+	}
+
+	form#whats-new-form #whats-new-textarea {
+		padding: 8px;
+		border: 1px inset #ccc;
+		margin-bottom: 10px;
+	}
+	form#whats-new-form textarea {
+		width: 100%;
+		height: 60px;
+		font-size: 14px;
+		font-family: inherit;
+		color: #555;
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	form#whats-new-form #whats-new-submit {
+		float: right;
+		margin: 0;
+	}
+
+/***
+ * Activity Stream Post Form
+ */
+
+ul.activity-list {
+	margin: 0;
+	padding: 0;
+}
+
+li.activity{
+	width: 595px;
+}
+
+ul.activity-list li {
+	overflow: hidden;
+	padding: 20px 0;
+}
+	ul.activity-list li img.avatar {
+		float: left;
+		width: 60px;
+		height: 60px;
+	}
+
+	ul.activity-list li div.activity-content {
+		margin-left: 75px;
+	}
+
+	ul.activity-list li div.activity-comments {
+		margin: 15px 0 0 38px;
+	}
+		ul.activity-list li div.activity-comments ul li {
+			padding: 5px 0;
+		}
+
+		ul.activity-list li div.activity-comments img.avatar {
+			width: 25px;
+			height: 25px;
+		}
+
+		ul.activity-list li div.acomment-content, ul.activity-list li div.acomment-meta {
+			margin-left: 35px;
+		}
+
+	ul.activity-list li div.activity-inreplyto {
+		margin: 15px 0 0 75px;
+		font-size: 11px;
+	}
+
+/***
+ * Input Forms
+ */
+
+/* Activity comment forms */
+
+form.ac-form { display: none; } /* JS will show this */
+
+div.activity-comments form {
+	display: none;
+	margin: 10px 0 10px 33px;
+	padding: 8px;
+}
+
+	div.activity-comments div#message {
+		margin-top: 15px;
+		margin-bottom: 0;
+	}
+
+	div.activity-comments form.loading {
+		background-image: url( ../images/ajax-loader.gif );
+		background-position: 2% 95%;
+		background-repeat: no-repeat;
+	}
+
+	div.activity-comments form .ac-textarea {
+		padding: 8px;
+		border: 1px inset #ccc;
+		margin-bottom: 10px;
+	}
+		div.activity-comments form textarea {
+			width: 100%;
+			height: 60px;
+			border: none;
+			padding: 0;
+		}
+			div.activity-comments form input {
+				margin-top: 5px;
+			}
+
+	div.activity-comments form div.ac-reply-avatar {
+		float: left;
+	}
+
+	div.activity-comments form div.ac-reply-content {
+		margin-left: 25px;
+		padding-left: 15px;
+	}
+
+
+/* Send Invites Form */
+form#send-invite-form {
+	margin-top: 20px;
+}
+	div#invite-list {
+		height: 400px;
+		overflow: scroll;
+		padding: 5px;
+		width: 160px;
+		margin: 10px 0;
+	}
+
+/* Directory search forms */
+
+form.dir-form div.dir-search {
+	float: right;
+	width: 50%;
+	margin: 0 0 25px 0;
+}
