@@ -102,7 +102,7 @@ function Authpuppy_setup() {
 	// Your changeable header business starts here
 	define( 'HEADER_TEXTCOLOR', '' );
 	// No CSS, just IMG call. The %s is a placeholder for the theme template directory URI.
-	define( 'HEADER_IMAGE', '%s/images/headers/isf.png' );
+	define( 'HEADER_IMAGE', '%s/images/headers/zapquebec.png' );
 
 	// The height and width of your custom header. You can hook into the theme's own filters to change these values.
 	// Add a filter to Authpuppy_header_image_width and Authpuppy_header_image_height to change these values.
