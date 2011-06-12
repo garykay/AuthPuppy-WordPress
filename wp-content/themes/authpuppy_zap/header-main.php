@@ -14,7 +14,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	
 	<?php
-		include(__DIR__."/config.php");
+		include(TEMPLATEPATH."/config.php");
 	?>
 	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=<?php echo GMAPS_KEY; ?>" type="text/javascript"></script>
 	<script type="text/javascript" src="<?php echo WP_CONTENT_URL; ?>/themes/authpuppy/js/jquery-1.2.6.min.js"></script>
