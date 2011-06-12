@@ -19,7 +19,7 @@
 	//if user is not logged in we display the login screen
 	//else we display the MENU_2_LINK
 	define('MENU_2_WHAT', 'Votre profil');
-	define('MENU_2_LINK', bp_loggedin_user_domain());
+	//define('MENU_2_LINK', bp_loggedin_user_domain());
 	define('MENU_2_LOGIN', TRUE);
 	
 	define('MENU_3_WHAT', 'Membres');
